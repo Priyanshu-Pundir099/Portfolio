@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Priyanshu Pundir · Portfolio</title>
+  <meta name="description" content="Portfolio of Priyanshu Pundir — B.Tech CSE · Java, JavaScript, React, Spring Boot, MongoDB">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="logo" aria-label="Go to top">SR</a>
+      <button class="nav-toggle" aria-label="Open Menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container" aria-labelledby="intro-title">
+      <div class="hero-left">
+        <h1 id="intro-title">Hi, I’m <span class="accent">Priyanshu Pundir</span></h1>
+        <p class="subtitle">
+          B.Tech CSE @ Galgotias University (CGPA 8.44/10). I build responsive web apps with
+          <strong>React</strong>, <strong>Spring Boot</strong>, <strong>MongoDB</strong>, and love solving problems.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="https://res.cloudinary.com/dltiymhzd/image/upload/v1756918236/Screenshot_2025-09-03_221942_tkxenn.png" download>View Resume</a>
+          <a class="btn ghost" href="#projects">View Projects</a>
+        </div>
+        <ul class="socials">
+          <!-- Replace # with your real profile URLs -->
+          <li><a href="https://www.linkedin.com/in/samyank-ror-630b1a287" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="https://github.com/Samyankror" aria-label="GitHub">GitHub</a></li>
+          <li><a href="https://leetcode.com/u/Samyank_123/" aria-label="LeetCode">LeetCode</a></li>
+          <li><a href="mailto:samyankror77@gmail.com" aria-label="Email">Email</a></li>
+          <li><a href="tel:+918279326036" aria-label="Phone">+91 82793 26036</a></li>
+        </ul>
+      </div>
+      <div class="hero-right">
+        <div class="card glass">
+          <p class="quote">“I enjoy learning new technologies and shipping clean, user‑friendly experiences.”</p>
+          <div class="badge-row">
+            <span class="badge">Java</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">React</span>
+            <span class="badge">Spring Boot</span>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container" aria-labelledby="about-title">
+      <h2 id="about-title" class="section-title">About</h2>
+      <p>
+        I’m a passionate Computer Science student who enjoys building full‑stack projects and
+        solving DSA problems. I focus on clean UI, secure auth flows, and scalable APIs.
+      </p>
+      <ul class="chips">
+        <li>Problem Solving</li>
+        <li>Teamwork</li>
+        <li>Adaptability</li>
+        <li>Git & GitHub</li>
+        <li>Postman</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section container" aria-labelledby="edu-title">
+      <h2 id="edu-title" class="section-title">Education</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Galgotias University — B.Tech CSE</h3>
+            <p class="muted">Greater Noida, India · Expected June 2026</p>
+            <p>CGPA: 8.44 / 10</p>
+            <p class="muted">Relevant coursework: OOP, DBMS</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section container" aria-labelledby="skills-title">
+      <h2 id="skills-title" class="section-title">Skills</h2>
+      <div class="grid skills-grid">
+        <div class="card">
+          <h3>Languages</h3>
+          <ul class="list-two-col">
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Frameworks & Tech</h3>
+          <ul class="list-two-col">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Tailwind</li>
+            <li>React</li>
+            <li>Spring Boot</li>
+            <li>MongoDB</li>
+           
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <ul class="list-two-col">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container" aria-labelledby="projects-title">
+      <h2 id="projects-title" class="section-title">Projects</h2>
+
+      <div class="grid projects-grid">
+        <article class="card project">
+          <div class="project-head">
+            <h3>AI Resume Generator</h3>
+            <span class="tag">(July – Aug 2025) </span>
+          </div>
+          <p>
+            Built a full-stack resume platform using React and Spring Boot with seamless frontend-backend integration. Integrated Ollama with DeepSeek AI to auto-generate personalized resume content using LLMs 
+            Implemented secure user authentication and RESTful APIs for dynamic resume creation. Designed responsive UI with Tailwind CSS and optimized export-ready resume flow. 
+          </p>
+          <ul class="pill-row">
+            <li>React</li><li>Spring Boot</li><li>Ollama Deep Seek AI</li>
+          </ul>
+          <div class="project-ctas">
+            <a class="btn small" href="https://homescape-qkql.onrender.com" >Live</a>
+            <a class="btn small ghost" href="https://github.com/Samyankror/HomeScape" >Code </a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project-head">
+            <h3>Employee Management System</h3>
+            <span class="tag">May 2025</span>
+          </div>
+          <p>
+            Role‑based task management in React with localStorage. Employees accept/reject/update tasks; dynamic
+            admin dashboard reflects status in real‑time.
+          </p>
+          <ul class="pill-row">
+            <li>React</li><li>LocalStorage</li><li>Vite/CRA</li>
+          </ul>
+          <div class="project-ctas">
+            <a class="btn small" href="https://employee-management-system-e6lj.vercel.app/" >Live</a>
+            <a class="btn small ghost" href="https://github.com/Samyankror/Employee-Management-System" >Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section container" aria-labelledby="achievements-title">
+      <h2 id="achievements-title" class="section-title">Achievements</h2>
+      <ul class="achievements">
+        <li>Solved 200+ problems on LeetCode & 100+ on GFG focused on Data Structures & Algorithms.</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">Contact</h2>
+      <div class="contact-card card">
+        <p class="muted">Open to internships and freelance opportunities. Feel free to reach out!</p>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:samyankror77@gmail.com">pundirpriyanshu937@gmail.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+918279653972">+91 82796 53972</a></li>
+        </ul>
+        <form class="contact-form" onsubmit="return openMail(this)">
+          <div class="row">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+          </div>
+          <textarea name="message" rows="5" placeholder="Your message…" required></textarea>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Priyanshu Pundir. Built with HTML · CSS · JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
